@@ -202,7 +202,7 @@ const Index = () => {
         </motion.div>
       </section>
 
-      {/* Case Study */}
+      {/* Client Transformations */}
       <section className="py-20 md:py-28">
         <motion.div
           initial="hidden"
@@ -211,23 +211,29 @@ const Index = () => {
           variants={stagger}
           className="mx-auto max-w-4xl px-6"
         >
-          <motion.div variants={fadeIn} className="mb-12 text-center">
+          <motion.div variants={fadeIn} className="mb-14 text-center">
             <p className="mb-3 text-sm font-medium uppercase tracking-[0.2em] text-primary">
-              Case Study
+              Real Stories
             </p>
             <h2 className="text-3xl font-semibold md:text-4xl">
-              From 15 years of chronic anxiety to{" "}
-              <em>"I am no longer anxious"</em>
+              Client Transformations
             </h2>
           </motion.div>
 
+          {/* Salvador */}
+          <motion.div variants={fadeIn} className="mb-6 text-center">
+            <h3 className="text-xl font-semibold md:text-2xl">
+              From 15 years of chronic anxiety to{" "}
+              <em>"I am no longer anxious"</em>
+            </h3>
+          </motion.div>
           <motion.div
             variants={fadeIn}
             className="rounded-2xl border border-border bg-card p-8 shadow-sm md:p-12"
           >
             <div className="grid gap-10 md:grid-cols-2">
               <div>
-                <h3 className="mb-4 text-lg font-semibold text-primary">Before</h3>
+                <h4 className="mb-4 text-lg font-semibold text-primary">Before</h4>
                 <ul className="space-y-3 text-muted-foreground">
                   <li className="flex gap-3">
                     <span className="mt-1.5 h-2 w-2 shrink-0 rounded-full bg-muted-foreground/40" />
@@ -244,7 +250,7 @@ const Index = () => {
                 </ul>
               </div>
               <div>
-                <h3 className="mb-4 text-lg font-semibold text-primary">After</h3>
+                <h4 className="mb-4 text-lg font-semibold text-primary">After</h4>
                 <ul className="space-y-3 text-muted-foreground">
                   <li className="flex gap-3">
                     <span className="mt-1.5 h-2 w-2 shrink-0 rounded-full bg-primary/60" />
@@ -261,7 +267,6 @@ const Index = () => {
                 </ul>
               </div>
             </div>
-
             <div className="mt-10 rounded-xl bg-secondary/50 p-6 md:p-8">
               <blockquote className="text-center text-lg italic leading-relaxed md:text-xl">
                 "After just 10 hours of coaching, I had my first 2 consecutive
@@ -270,6 +275,65 @@ const Index = () => {
               </blockquote>
               <p className="mt-4 text-center text-sm font-medium text-muted-foreground">
                 — Salvador, entrepreneur
+              </p>
+            </div>
+          </motion.div>
+
+          {/* Bianca */}
+          <motion.div variants={fadeIn} className="mb-6 mt-14 text-center">
+            <h3 className="text-xl font-semibold md:text-2xl">
+              From self-doubt and constant overthinking to{" "}
+              <em>presence and inner power</em>
+            </h3>
+          </motion.div>
+          <motion.div
+            variants={fadeIn}
+            className="rounded-2xl border border-border bg-card p-8 shadow-sm md:p-12"
+          >
+            <div className="grid gap-10 md:grid-cols-2">
+              <div>
+                <h4 className="mb-4 text-lg font-semibold text-primary">Before</h4>
+                <ul className="space-y-3 text-muted-foreground">
+                  <li className="flex gap-3">
+                    <span className="mt-1.5 h-2 w-2 shrink-0 rounded-full bg-muted-foreground/40" />
+                    Lingering job insecurity and financial anxiety
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="mt-1.5 h-2 w-2 shrink-0 rounded-full bg-muted-foreground/40" />
+                    Procrastination driven by self-judgment
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="mt-1.5 h-2 w-2 shrink-0 rounded-full bg-muted-foreground/40" />
+                    Social anxiety and fear of not being "enough"
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h4 className="mb-4 text-lg font-semibold text-primary">After</h4>
+                <ul className="space-y-3 text-muted-foreground">
+                  <li className="flex gap-3">
+                    <span className="mt-1.5 h-2 w-2 shrink-0 rounded-full bg-primary/60" />
+                    Catches anxious thoughts and returns to presence within moments
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="mt-1.5 h-2 w-2 shrink-0 rounded-full bg-primary/60" />
+                    Acts from clarity instead of guilt or fear
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="mt-1.5 h-2 w-2 shrink-0 rounded-full bg-primary/60" />
+                    Feels "enough" without external validation
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div className="mt-10 rounded-xl bg-secondary/50 p-6 md:p-8">
+              <blockquote className="text-center text-lg italic leading-relaxed md:text-xl">
+                "We can ruin our own state ourselves." — recognising that while
+                she cannot control the future, she has total power to choose her
+                experience of the present.
+              </blockquote>
+              <p className="mt-4 text-center text-sm font-medium text-muted-foreground">
+                — Bianca, front-end developer
               </p>
             </div>
           </motion.div>
