@@ -1,67 +1,38 @@
 
 
-# Landing Page for Anastasia Dobrovolschi — Transformative Leadership Coach
+# Add Second Case Study: Bianca Veres
 
-## Design Direction
-- **Palette:** Warm earth tones — soft creams, warm taupes, muted terracotta, deep charcoal for text
-- **Typography:** Elegant serif headings paired with clean sans-serif body text
-- **Feel:** Spacious, calm, grounded — the design itself should feel like the relief Anastasia offers
-- **Photography:** Anastasia's headshot featured prominently
+## What's Changing
+Adding Bianca's transformation story alongside Salvador's existing case study, creating a more compelling social proof section with two distinct client journeys.
 
----
+## Bianca's Case Study Summary
+- **Who:** Bianca Veres, a front-end developer near Paris going through a major life transition
+- **Before:** Financial anxiety despite being employed, procrastination and self-judgment, social anxiety, difficulty with professional boundaries (collecting payment from a client)
+- **After:** Reduced self-judgment, increased presence (catching fear and returning to the present within milliseconds), authentic interactions without needing external validation, internal resilience
+- **Key quote:** "We can ruin our own state ourselves" -- recognizing she has total power to choose her experience of the present
 
-## Page Sections
+## Design Approach
+- Rename the section from "Case Study" to something like "Client Transformations" or "Real Stories"
+- Display both case studies in a clean layout -- Salvador first (the more dramatic transformation), then Bianca
+- Each case study keeps the same Before/After card format already in place
+- Bianca's card highlights a different angle: from self-doubt and anxiety to presence and self-trust -- broadening the appeal beyond just "chronic anxiety"
 
-### 1. Hero Section
-- Anastasia's name & title: "Transformative Leadership Coach"
-- Headline: *"You hold it all together. What if you didn't have to?"*
-- Sub-line: "I help high-performing leaders reconnect with clarity and calm — not by fixing what's broken, but by seeing what's true."
-- Primary CTA: **"Book Your Discovery Call"** → Calendly link
-- Anastasia's professional headshot
+## Section Structure
 
-### 2. "I See You" — The Problem Section
-- Speaks directly to the ideal client in second person
-- Addresses: the weight of responsibility, the background hum of anxiety, outward success masking inner exhaustion
-- Honest, resonant language — no jargon
+**Salvador (existing -- unchanged)**
+- Headline: From 15 years of chronic anxiety to "I am no longer anxious"
+- Before/After bullets + quote
 
-### 3. The Shift — How It Works
-- Explains the transformation: not fixing, but understanding how experience is created
-- Three outcome cards: Clearer decisions, Lighter leadership, A spacious life
-- Brief, impactful copy
-
-### 4. About Anastasia
-- Photo + warm, personal bio
-- Establishes credibility and human connection
-
-### 5. Case Study — Salvador's Transformation
-- Headline: *"From 15 Years of Chronic Anxiety to 'I Am No Longer Anxious'"*
-- Before state: entrepreneur paralysed by fear, on 3 psychiatric medications for over a decade, unable to be present for his family
-- The shift: through understanding how his mind creates experience, not by fixing himself
-- After state: anxiety-free for the first time in 15 years, clearer in business, emotionally independent, present with his family
-- Key moment highlighted: first 2 consecutive anxiety-free days in 15 years — after just 10 hours of coaching
-- Quote-style formatting for maximum impact
-
-### 6. Simple 3-Step Process
-1. Book a free discovery call
-2. We explore what's really going on
-3. You find your way back to clarity
-- Removes friction, makes the next step feel easy
-
-### 7. Final CTA Section
-- Warm closing: *"You don't need to carry it all alone."*
-- Large **"Book Your Free Discovery Call"** button → Calendly
-- Micro-copy: "No pressure. Just a conversation."
-
-### 8. Footer
-- Anastasia's name, copyright
-- Space for social links later
-
----
+**Bianca (new)**
+- Headline: From self-doubt and constant overthinking to presence and inner power
+- Before: Lingering job insecurity and financial anxiety, procrastination driven by self-judgment, social anxiety and fear of not being "enough"
+- After: Catches anxious thoughts and returns to presence within moments, acts from clarity instead of guilt or fear, feels "enough" without external validation
+- Quote: "We can ruin our own state ourselves." -- recognising that while she cannot control the future, she has total power to choose her experience of the present.
+- Attribution: Bianca, front-end developer
 
 ## Technical Details
-- Fully responsive, mobile-first (visitors likely coming from social media)
-- Calendly link opens in new tab
-- Smooth scroll with subtle fade-in animations
-- Both uploaded images used on the page
-- Case study content translated from Romanian to English
+- Edit only `src/pages/Index.tsx`
+- No new dependencies or files needed
+- Reuses the existing card styling and animation patterns
+- Both case studies wrapped in the same section with a shared heading
 
