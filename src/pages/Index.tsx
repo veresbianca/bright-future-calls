@@ -451,7 +451,7 @@ const Index = () => {
       </section>
 
       {/* About */}
-      <section className="bg-card py-20 md:py-28">
+      <section className="py-20 md:py-28">
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -495,7 +495,7 @@ const Index = () => {
       </section>
 
      {/* Section E — Book a Discovery Call */}
-      <section className="py-20 md:py-28">
+      <section className="bg-card py-20 md:py-28">
         <motion.div
           initial="hidden"
           whileInView="visible"
