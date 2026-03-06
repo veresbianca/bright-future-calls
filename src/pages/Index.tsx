@@ -53,6 +53,10 @@ const Index = () => {
                 variants={fadeIn}
                 className="mb-8 max-w-lg text-lg leading-relaxed text-muted-foreground md:text-xl">But behind the scenes your mind keeps scanning for what could go wrong — and it’s exhausting.
               </motion.p>
+              <motion.p
+                variants={fadeIn}
+                className="mb-8 max-w-lg text-lg leading-relaxed text-muted-foreground md:text-xl">I help high-functioning adults stop living in quiet internal tension and rediscover a sense of safety within themselves.
+              </motion.p>
               <motion.a variants={fadeIn} href={CALENDLY_URL}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -60,6 +64,10 @@ const Index = () => {
                 
                 Book Your Discovery Call
               </motion.a>
+              <motion.p
+                variants={fadeIn}
+                className="mb-8 max-w-lg text-sm leading-relaxed text-muted-foreground md:text-xl">A 30-minute conversation to explore what’s keeping you stuck and whether this work is the right next step for you.
+              </motion.p>
             </div>
 
             <motion.div variants={fadeIn} className="order-1 md:order-2">
