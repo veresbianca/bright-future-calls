@@ -91,9 +91,7 @@ const Index = () => {
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
           variants={stagger}
-          className="mx-auto max-w-6xl px-6 grid items-center gap-12 md:grid-cols-2">
-          
-          <div>
+          className="mx-auto max-w-6xl px-6 grid items-center gap-12">
             <motion.h2
               variants={fadeIn}
               className="mb-8 text-3xl font-semibold md:text-4xl">
@@ -104,7 +102,7 @@ const Index = () => {
               <p>You show up for your work, your family, your responsibilities.</p>
               <p>Most people would describe you as someone who has it together.</p>
               <p className="text-uppercase">But internally it might feel very different.</p>
-              <ol className="list-disc">
+              <ol className="list-disc pl-[20px]">
                 <li>Your mind <b>keeps replaying situations.</b></li>
                 <li>You worry about <b>things that haven't happened yet.</b></li>
                 <li>A small trigger can spiral into <b>hours of thinking.</b></li>
@@ -114,17 +112,6 @@ const Index = () => {
               <p>You know these thoughts are not always rational.</p>
               <p className="text-foreground font-medium">But knowing that doesn't stop them.</p>
             </motion.div>
-          </div>
-
-          <motion.div variants={fadeIn} className="flex items-center justify-center">
-            <svg viewBox="0 0 400 400" className="w-full max-w-sm opacity-60" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="200" cy="200" r="180" stroke="hsl(16 45% 55% / 0.15)" strokeWidth="1.5" />
-              <circle cx="200" cy="200" r="140" stroke="hsl(16 45% 55% / 0.2)" strokeWidth="1.5" />
-              <circle cx="200" cy="200" r="100" stroke="hsl(16 45% 55% / 0.25)" strokeWidth="1.5" />
-              <circle cx="200" cy="200" r="60" stroke="hsl(16 45% 55% / 0.3)" strokeWidth="1.5" />
-              <circle cx="200" cy="200" r="24" fill="hsl(16 45% 55% / 0.12)" />
-            </svg>
-          </motion.div>
         </motion.div>
       </section>
 
