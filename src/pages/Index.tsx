@@ -91,7 +91,7 @@ const Index = () => {
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
           variants={stagger}
-          className="mx-auto max-w-3xl px-6 text-center">
+          className="mx-auto max-w-3xl px-6">
           
           <motion.h2
             variants={fadeIn}
@@ -112,8 +112,8 @@ const Index = () => {
             <p>
             But internally it might feel very different.
             </p>
-            <ol>
-              <li>Your mind keeps replaying situations.</li>
+            <ol className="list-inside">
+              <li>Your mind <b>keeps replaying situations.</b></li>
               <li>You worry about things that haven’t happened yet.</li>
               <li>A small trigger can spiral into hours of thinking.</li>
               <li>Even when life is stable, something inside feels tense.</li>
