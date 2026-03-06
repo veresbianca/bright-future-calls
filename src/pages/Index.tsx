@@ -64,9 +64,9 @@ const Index = () => {
                 
                 Book Your Discovery Call
               </motion.a>
-              <motion.p
-                variants={fadeIn}
-                className="mb-8 mt-4 max-w-lg text-xs leading-relaxed text-muted-foreground md:text-xs">A 30-minute conversation to explore what’s keeping you stuck and whether this work is the right next step for you.
+              
+              <motion.p variants={fadeIn} className="mt-4 text-sm text-muted-foreground">
+                A 30-minute conversation to explore what’s keeping you stuck and whether this work is the right next step for you.
               </motion.p>
             </div>
 
