@@ -50,11 +50,11 @@ const Index = () => {
                 className="mb-8 max-w-lg text-lg leading-relaxed text-muted-foreground md:text-xl">You’re responsible. Capable. Reliable.
 
 
+But behind the scenes your mind keeps scanning for what could go wrong — and it’s exhausting.
 
-              </motion.p>
-              <motion.a
-                variants={fadeIn}
-                href={CALENDLY_URL}
+
+I help high-functioning adults stop living in quiet internal tension and rediscover a sense of safety within themselves.</motion.p>
+              <motion.a variants={fadeIn} href={CALENDLY_URL}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block rounded-full bg-primary px-8 py-4 text-base font-semibold text-primary-foreground shadow-lg transition-all hover:shadow-xl hover:brightness-110">
