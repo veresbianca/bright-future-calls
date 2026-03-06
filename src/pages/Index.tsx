@@ -109,15 +109,15 @@ const Index = () => {
             <p>
              Most people would describe you as someone who has it together.
             </p>
-            <p>
+            <p className="text-uppercase">
             But internally it might feel very different.
             </p>
-            <ol className="list-inside">
+            <ol className="list-disc">
               <li>Your mind <b>keeps replaying situations.</b></li>
-              <li>You worry about things that haven’t happened yet.</li>
-              <li>A small trigger can spiral into hours of thinking.</li>
-              <li>Even when life is stable, something inside feels tense.</li>
-              <li>You feel responsible for keeping everything from falling apart.</li>
+              <li>You worry about <b>things that haven’t happened yet.</b></li>
+              <li>A small trigger can spiral into <b>hours of thinking.</b></li>
+              <li>Even when life is stable, <b>something inside feels tense.</b></li>
+              <li><b>You feel responsible</b> for keeping everything from falling apart.</li>
             </ol>
             <p>
               You know these thoughts are not always rational.
