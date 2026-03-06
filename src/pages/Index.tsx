@@ -264,140 +264,7 @@ const Index = () => {
         </motion.div>
       </section>
 
-      {/* Section D — Who This Is For */}
-      <section className="bg-card py-20 md:py-28">
-        <motion.div
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: "-100px" }}
-          variants={stagger}
-          className="mx-auto max-w-4xl px-6">
-          <motion.h2 variants={fadeIn} className="mb-12 text-center text-3xl font-semibold md:text-4xl">
-            Who this work is for
-          </motion.h2>
-          <div className="grid gap-10 md:grid-cols-2">
-            <motion.div variants={fadeIn}>
-              <h3 className="mb-6 text-lg font-semibold text-primary">This work may be for you if:</h3>
-              <ul className="space-y-4 text-muted-foreground">
-                {[
-                  "You are high-functioning but internally tense",
-                  "Your mind often runs worst-case scenarios",
-                  "You feel responsible for holding everything together",
-                  "You've tried mindset, therapy, or self-help but the patterns keep returning",
-                  "You want clarity and calm, not endless coping strategies",
-                ].map((item) => (
-                  <li key={item} className="flex gap-3">
-                    <span className="mt-1.5 h-2 w-2 shrink-0 rounded-full bg-primary/60" />
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </motion.div>
-            <motion.div variants={fadeIn}>
-              <h3 className="mb-6 text-lg font-semibold text-muted-foreground">This work may NOT be for you if:</h3>
-              <ul className="space-y-4 text-muted-foreground">
-                {[
-                  "You are looking for quick motivation or productivity hacks",
-                  "You want someone to give you constant reassurance",
-                  "You are not willing to explore how your thinking patterns operate",
-                ].map((item) => (
-                  <li key={item} className="flex gap-3">
-                    <span className="mt-1.5 h-2 w-2 shrink-0 rounded-full bg-muted-foreground/40" />
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </motion.div>
-          </div>
-        </motion.div>
-      </section>
-
-      {/* Section E — Book a Discovery Call */}
-      <section className="py-20 md:py-28">
-        <motion.div
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: "-100px" }}
-          variants={stagger}
-          className="mx-auto max-w-2xl px-6 text-center">
-          <motion.h2 variants={fadeIn} className="mb-6 text-3xl font-semibold md:text-4xl">
-            Book a Discovery Call
-          </motion.h2>
-          <motion.p variants={fadeIn} className="mb-8 text-lg text-muted-foreground">
-            This is a 45-minute conversation where we explore:
-          </motion.p>
-          <motion.ul variants={fadeIn} className="mx-auto mb-10 max-w-md space-y-3 text-left text-lg text-muted-foreground">
-            {[
-              "what patterns are currently keeping you stuck",
-              "what you've already tried",
-              "whether this coaching approach is the right fit for you",
-            ].map((item) => (
-              <li key={item} className="flex gap-3">
-                <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-primary/50" />
-                {item}
-              </li>
-            ))}
-          </motion.ul>
-          <motion.p variants={fadeIn} className="mb-8 text-lg text-muted-foreground">
-            There is no pressure or obligation.<br />
-            Just a chance to see what is possible.
-          </motion.p>
-          <motion.a
-            variants={fadeIn}
-            href={CALENDLY_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block rounded-full bg-primary px-10 py-4 text-lg font-semibold text-primary-foreground shadow-lg transition-all hover:shadow-xl hover:brightness-110">
-            Book Your Discovery Call
-          </motion.a>
-        </motion.div>
-      </section>
-
-      {/* About */}
-      <section className="bg-card py-20 md:py-28">
-        <motion.div
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: "-100px" }}
-          variants={stagger}
-          className="mx-auto grid max-w-6xl items-center gap-12 px-6 md:grid-cols-2 md:gap-16">
-          
-          <motion.div variants={fadeIn}>
-            <div className="relative mx-auto aspect-square max-w-sm overflow-hidden rounded-2xl shadow-xl">
-              <img
-                src={anastasiaHeadshot}
-                alt="Anastasia Dobrovolschi"
-                className="h-full w-full object-cover"
-                loading="lazy" />
-              
-            </div>
-          </motion.div>
-          <motion.div variants={fadeIn}>
-            <h2 className="mb-6 text-3xl font-semibold md:text-4xl">
-              About Anastasia
-            </h2>
-            <div className="space-y-4 text-lg leading-relaxed text-muted-foreground">
-              <p>
-                My work focuses on helping responsible, capable adults understand how their minds create unnecessary tension — and how to step out of those patterns.
-              </p>
-              <p>
-                Instead of managing anxiety forever, the work focuses on restoring a deeper sense of internal safety.
-              </p>
-              <p>
-                Clients often come to me after years of trying to fix themselves.
-              </p>
-              <p>
-                What they discover is that nothing was broken.
-              </p>
-              <p>
-                Their mind simply learned a protective pattern that can be understood and released.
-              </p>
-            </div>
-          </motion.div>
-        </motion.div>
-      </section>
-
-      {/* Client Transformations */}
+       {/* Client Transformations */}
       <section className="py-20 md:py-28">
         <motion.div
           initial="hidden"
@@ -534,6 +401,141 @@ const Index = () => {
           </motion.div>
         </motion.div>
       </section>
+
+      {/* Section D — Who This Is For */}
+      <section className="bg-card py-20 md:py-28">
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-100px" }}
+          variants={stagger}
+          className="mx-auto max-w-4xl px-6">
+          <motion.h2 variants={fadeIn} className="mb-12 text-center text-3xl font-semibold md:text-4xl">
+            Who this work is for
+          </motion.h2>
+          <div className="grid gap-10 md:grid-cols-2">
+            <motion.div variants={fadeIn}>
+              <h3 className="mb-6 text-lg font-semibold text-primary">This work may be for you if:</h3>
+              <ul className="space-y-4 text-muted-foreground">
+                {[
+                  "You are high-functioning but internally tense",
+                  "Your mind often runs worst-case scenarios",
+                  "You feel responsible for holding everything together",
+                  "You've tried mindset, therapy, or self-help but the patterns keep returning",
+                  "You want clarity and calm, not endless coping strategies",
+                ].map((item) => (
+                  <li key={item} className="flex gap-3">
+                    <span className="mt-1.5 h-2 w-2 shrink-0 rounded-full bg-primary/60" />
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </motion.div>
+            <motion.div variants={fadeIn}>
+              <h3 className="mb-6 text-lg font-semibold text-muted-foreground">This work may NOT be for you if:</h3>
+              <ul className="space-y-4 text-muted-foreground">
+                {[
+                  "You are looking for quick motivation or productivity hacks",
+                  "You want someone to give you constant reassurance",
+                  "You are not willing to explore how your thinking patterns operate",
+                ].map((item) => (
+                  <li key={item} className="flex gap-3">
+                    <span className="mt-1.5 h-2 w-2 shrink-0 rounded-full bg-muted-foreground/40" />
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </motion.div>
+          </div>
+        </motion.div>
+      </section>
+
+      {/* Section E — Book a Discovery Call */}
+      <section className="py-20 md:py-28">
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-100px" }}
+          variants={stagger}
+          className="mx-auto max-w-2xl px-6 text-center">
+          <motion.h2 variants={fadeIn} className="mb-6 text-3xl font-semibold md:text-4xl">
+            Book a Discovery Call
+          </motion.h2>
+          <motion.p variants={fadeIn} className="mb-8 text-lg text-muted-foreground">
+            This is a 45-minute conversation where we explore:
+          </motion.p>
+          <motion.ul variants={fadeIn} className="mx-auto mb-10 max-w-md space-y-3 text-left text-lg text-muted-foreground">
+            {[
+              "what patterns are currently keeping you stuck",
+              "what you've already tried",
+              "whether this coaching approach is the right fit for you",
+            ].map((item) => (
+              <li key={item} className="flex gap-3">
+                <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-primary/50" />
+                {item}
+              </li>
+            ))}
+          </motion.ul>
+          <motion.p variants={fadeIn} className="mb-8 text-lg text-muted-foreground">
+            There is no pressure or obligation.<br />
+            Just a chance to see what is possible.
+          </motion.p>
+          <motion.a
+            variants={fadeIn}
+            href={CALENDLY_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block rounded-full bg-primary px-10 py-4 text-lg font-semibold text-primary-foreground shadow-lg transition-all hover:shadow-xl hover:brightness-110">
+            Book Your Discovery Call
+          </motion.a>
+        </motion.div>
+      </section>
+
+      {/* About */}
+      <section className="bg-card py-20 md:py-28">
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-100px" }}
+          variants={stagger}
+          className="mx-auto grid max-w-6xl items-center gap-12 px-6 md:grid-cols-2 md:gap-16">
+          
+          <motion.div variants={fadeIn}>
+            <div className="relative mx-auto aspect-square max-w-sm overflow-hidden rounded-2xl shadow-xl">
+              <img
+                src={anastasiaHeadshot}
+                alt="Anastasia Dobrovolschi"
+                className="h-full w-full object-cover"
+                loading="lazy" />
+              
+            </div>
+          </motion.div>
+          <motion.div variants={fadeIn}>
+            <h2 className="mb-6 text-3xl font-semibold md:text-4xl">
+              About Anastasia
+            </h2>
+            <div className="space-y-4 text-lg leading-relaxed text-muted-foreground">
+              <p>
+                My work focuses on helping responsible, capable adults understand how their minds create unnecessary tension — and how to step out of those patterns.
+              </p>
+              <p>
+                Instead of managing anxiety forever, the work focuses on restoring a deeper sense of internal safety.
+              </p>
+              <p>
+                Clients often come to me after years of trying to fix themselves.
+              </p>
+              <p>
+                What they discover is that nothing was broken.
+              </p>
+              <p>
+                Their mind simply learned a protective pattern that can be understood and released.
+              </p>
+            </div>
+          </motion.div>
+        </motion.div>
+      </section>
+
+     
 
       {/* 3-Step Process */}
       <section className="bg-card py-20 md:py-28">
