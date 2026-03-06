@@ -91,7 +91,7 @@ const Index = () => {
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
           variants={stagger}
-          className="mx-auto max-w-3xl px-6 grid items-center gap-12">
+          className="mx-auto max-w-3xl px-6 grid items-center text-center gap-12">
             <motion.h2
               variants={fadeIn}
               className="mb-8 text-3xl font-semibold md:text-4xl">
@@ -102,7 +102,7 @@ const Index = () => {
               <p>You show up for your work, your family, your responsibilities.</p>
               <p>Most people would describe you as someone who has it together.</p>
               <p className="text-uppercase">But internally it might feel very different.</p>
-              <ol className="list-disc pl-[20px]">
+              <ol>
                 <li>Your mind <b>keeps replaying situations.</b></li>
                 <li>You worry about <b>things that haven't happened yet.</b></li>
                 <li>A small trigger can spiral into <b>hours of thinking.</b></li>
