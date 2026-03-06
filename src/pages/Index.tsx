@@ -6,11 +6,11 @@ const CALENDLY_URL = "https://calendly.com/anastasiadobrovolschi/discoverycall";
 
 const fadeIn = {
   hidden: { opacity: 0, y: 30 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.7, ease: [0, 0, 0.2, 1] as const } },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.7, ease: [0, 0, 0.2, 1] as const } }
 } as const;
 
 const stagger = {
-  visible: { transition: { staggerChildren: 0.15 } },
+  visible: { transition: { staggerChildren: 0.15 } }
 };
 
 const Index = () => {
@@ -23,42 +23,42 @@ const Index = () => {
             initial="hidden"
             animate="visible"
             variants={stagger}
-            className="grid items-center gap-12 md:grid-cols-2 md:gap-16"
-          >
+            className="grid items-center gap-12 md:grid-cols-2 md:gap-16">
+            
             <div className="order-2 md:order-1">
               <motion.img
                 variants={fadeIn}
                 src={anastasiaBrand}
                 alt="Anastasia Dobrovolschi"
-                className="mb-6 h-8 w-auto md:h-10"
-              />
+                className="mb-6 h-8 w-auto md:h-10" />
+              
               <motion.p
                 variants={fadeIn}
-                className="mb-4 text-sm font-medium uppercase tracking-[0.2em] text-muted-foreground"
-              >
-                Transformative Leadership Coach
+                className="mb-4 text-sm font-medium uppercase tracking-[0.2em] text-muted-foreground">TRANSFORMATIVE COACH
+
+
               </motion.p>
               <motion.h1
                 variants={fadeIn}
-                className="mb-6 text-4xl font-semibold leading-tight tracking-tight md:text-5xl lg:text-6xl"
-              >
+                className="mb-6 text-4xl font-semibold leading-tight tracking-tight md:text-5xl lg:text-6xl">
+                
                 You hold it all together.{" "}
-                <em className="text-primary">What if you didn't have to?</em>
+                <em className="text-primary">but inside your mind never fully relaxes.</em>
               </motion.h1>
               <motion.p
                 variants={fadeIn}
-                className="mb-8 max-w-lg text-lg leading-relaxed text-muted-foreground md:text-xl"
-              >
-                I help high-performing leaders reconnect with clarity and calm — not by
-                fixing what's broken, but by seeing what's true.
+                className="mb-8 max-w-lg text-lg leading-relaxed text-muted-foreground md:text-xl">You’re responsible. Capable. Reliable.
+
+
+
               </motion.p>
               <motion.a
                 variants={fadeIn}
                 href={CALENDLY_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block rounded-full bg-primary px-8 py-4 text-base font-semibold text-primary-foreground shadow-lg transition-all hover:shadow-xl hover:brightness-110"
-              >
+                className="inline-block rounded-full bg-primary px-8 py-4 text-base font-semibold text-primary-foreground shadow-lg transition-all hover:shadow-xl hover:brightness-110">
+                
                 Book Your Discovery Call
               </motion.a>
             </div>
@@ -69,8 +69,8 @@ const Index = () => {
                   src={anastasiaHeadshot}
                   alt="Anastasia Dobrovolschi, Transformative Leadership Coach"
                   className="h-full w-full object-cover"
-                  loading="eager"
-                />
+                  loading="eager" />
+                
               </div>
             </motion.div>
           </motion.div>
@@ -84,12 +84,12 @@ const Index = () => {
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
           variants={stagger}
-          className="mx-auto max-w-3xl px-6 text-center"
-        >
+          className="mx-auto max-w-3xl px-6 text-center">
+          
           <motion.h2
             variants={fadeIn}
-            className="mb-8 text-3xl font-semibold md:text-4xl"
-          >
+            className="mb-8 text-3xl font-semibold md:text-4xl">
+            
             I see you.
           </motion.h2>
           <motion.div variants={fadeIn} className="space-y-6 text-lg leading-relaxed text-muted-foreground">
@@ -118,8 +118,8 @@ const Index = () => {
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
           variants={stagger}
-          className="mx-auto max-w-6xl px-6"
-        >
+          className="mx-auto max-w-6xl px-6">
+          
           <motion.div variants={fadeIn} className="mx-auto mb-14 max-w-2xl text-center">
             <h2 className="mb-4 text-3xl font-semibold md:text-4xl">
               The shift
@@ -132,28 +132,28 @@ const Index = () => {
 
           <div className="grid gap-8 md:grid-cols-3">
             {[
-              {
-                title: "Clearer decisions",
-                desc: "When your mind quiets down, you see what matters. Decisions stop feeling like pressure and start feeling obvious.",
-              },
-              {
-                title: "Lighter leadership",
-                desc: "The weight you carry isn't part of the job — it's a misunderstanding. When that falls away, leading becomes natural again.",
-              },
-              {
-                title: "A spacious life",
-                desc: "Beyond the roles and responsibilities, there's a quality of life that's been waiting for you. Calm, present, alive.",
-              },
-            ].map((card) => (
-              <motion.div
-                key={card.title}
-                variants={fadeIn}
-                className="rounded-2xl border border-border bg-card p-8 shadow-sm transition-shadow hover:shadow-md"
-              >
+            {
+              title: "Clearer decisions",
+              desc: "When your mind quiets down, you see what matters. Decisions stop feeling like pressure and start feeling obvious."
+            },
+            {
+              title: "Lighter leadership",
+              desc: "The weight you carry isn't part of the job — it's a misunderstanding. When that falls away, leading becomes natural again."
+            },
+            {
+              title: "A spacious life",
+              desc: "Beyond the roles and responsibilities, there's a quality of life that's been waiting for you. Calm, present, alive."
+            }].
+            map((card) =>
+            <motion.div
+              key={card.title}
+              variants={fadeIn}
+              className="rounded-2xl border border-border bg-card p-8 shadow-sm transition-shadow hover:shadow-md">
+              
                 <h3 className="mb-3 text-xl font-semibold">{card.title}</h3>
                 <p className="leading-relaxed text-muted-foreground">{card.desc}</p>
               </motion.div>
-            ))}
+            )}
           </div>
         </motion.div>
       </section>
@@ -165,16 +165,16 @@ const Index = () => {
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
           variants={stagger}
-          className="mx-auto grid max-w-6xl items-center gap-12 px-6 md:grid-cols-2 md:gap-16"
-        >
+          className="mx-auto grid max-w-6xl items-center gap-12 px-6 md:grid-cols-2 md:gap-16">
+          
           <motion.div variants={fadeIn}>
             <div className="relative mx-auto aspect-square max-w-sm overflow-hidden rounded-2xl shadow-xl">
               <img
                 src={anastasiaHeadshot}
                 alt="Anastasia Dobrovolschi"
                 className="h-full w-full object-cover"
-                loading="lazy"
-              />
+                loading="lazy" />
+              
             </div>
           </motion.div>
           <motion.div variants={fadeIn}>
@@ -209,8 +209,8 @@ const Index = () => {
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
           variants={stagger}
-          className="mx-auto max-w-4xl px-6"
-        >
+          className="mx-auto max-w-4xl px-6">
+          
           <motion.div variants={fadeIn} className="mb-14 text-center">
             <p className="mb-3 text-sm font-medium uppercase tracking-[0.2em] text-primary">
               Real Stories
@@ -229,8 +229,8 @@ const Index = () => {
           </motion.div>
           <motion.div
             variants={fadeIn}
-            className="rounded-2xl border border-border bg-card p-8 shadow-sm md:p-12"
-          >
+            className="rounded-2xl border border-border bg-card p-8 shadow-sm md:p-12">
+            
             <div className="grid gap-10 md:grid-cols-2">
               <div>
                 <h4 className="mb-4 text-lg font-semibold text-primary">Before</h4>
@@ -288,8 +288,8 @@ const Index = () => {
           </motion.div>
           <motion.div
             variants={fadeIn}
-            className="rounded-2xl border border-border bg-card p-8 shadow-sm md:p-12"
-          >
+            className="rounded-2xl border border-border bg-card p-8 shadow-sm md:p-12">
+            
             <div className="grid gap-10 md:grid-cols-2">
               <div>
                 <h4 className="mb-4 text-lg font-semibold text-primary">Before</h4>
@@ -347,28 +347,28 @@ const Index = () => {
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
           variants={stagger}
-          className="mx-auto max-w-4xl px-6"
-        >
+          className="mx-auto max-w-4xl px-6">
+          
           <motion.h2
             variants={fadeIn}
-            className="mb-14 text-center text-3xl font-semibold md:text-4xl"
-          >
+            className="mb-14 text-center text-3xl font-semibold md:text-4xl">
+            
             How it works
           </motion.h2>
           <div className="grid gap-8 md:grid-cols-3">
             {[
-              { step: "01", title: "Book a free discovery call", desc: "A relaxed, no-pressure conversation to explore whether this is the right fit." },
-              { step: "02", title: "We explore what's really going on", desc: "Together we look beneath the surface — not at your problems, but at how your experience is being created." },
-              { step: "03", title: "You find your way back to clarity", desc: "As understanding deepens, the noise falls away. What's left is you — clear, calm, and capable." },
-            ].map((item) => (
-              <motion.div key={item.step} variants={fadeIn} className="text-center">
+            { step: "01", title: "Book a free discovery call", desc: "A relaxed, no-pressure conversation to explore whether this is the right fit." },
+            { step: "02", title: "We explore what's really going on", desc: "Together we look beneath the surface — not at your problems, but at how your experience is being created." },
+            { step: "03", title: "You find your way back to clarity", desc: "As understanding deepens, the noise falls away. What's left is you — clear, calm, and capable." }].
+            map((item) =>
+            <motion.div key={item.step} variants={fadeIn} className="text-center">
                 <span className="mb-4 inline-block text-4xl font-bold text-primary/30">
                   {item.step}
                 </span>
                 <h3 className="mb-3 text-lg font-semibold">{item.title}</h3>
                 <p className="text-muted-foreground">{item.desc}</p>
               </motion.div>
-            ))}
+            )}
           </div>
         </motion.div>
       </section>
@@ -380,12 +380,12 @@ const Index = () => {
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
           variants={stagger}
-          className="mx-auto max-w-2xl px-6 text-center"
-        >
+          className="mx-auto max-w-2xl px-6 text-center">
+          
           <motion.h2
             variants={fadeIn}
-            className="mb-6 text-3xl font-semibold md:text-4xl"
-          >
+            className="mb-6 text-3xl font-semibold md:text-4xl">
+            
             You don't need to carry it all alone.
           </motion.h2>
           <motion.p variants={fadeIn} className="mb-8 text-lg text-muted-foreground">
@@ -397,8 +397,8 @@ const Index = () => {
             href={CALENDLY_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block rounded-full bg-primary px-10 py-4 text-lg font-semibold text-primary-foreground shadow-lg transition-all hover:shadow-xl hover:brightness-110"
-          >
+            className="inline-block rounded-full bg-primary px-10 py-4 text-lg font-semibold text-primary-foreground shadow-lg transition-all hover:shadow-xl hover:brightness-110">
+            
             Book Your Free Discovery Call
           </motion.a>
           <motion.p variants={fadeIn} className="mt-4 text-sm text-muted-foreground">
@@ -413,8 +413,8 @@ const Index = () => {
           <p>© {new Date().getFullYear()} Anastasia Dobrovolschi. All rights reserved.</p>
         </div>
       </footer>
-    </div>
-  );
+    </div>);
+
 };
 
 export default Index;
