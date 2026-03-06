@@ -91,7 +91,7 @@ const Index = () => {
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
           variants={stagger}
-          className="mx-auto max-w-6xl px-6 grid items-center gap-12">
+          className="mx-auto max-w-3xl px-6 grid items-center gap-12">
             <motion.h2
               variants={fadeIn}
               className="mb-8 text-3xl font-semibold md:text-4xl">
@@ -126,34 +126,6 @@ const Index = () => {
           <motion.h2 variants={fadeIn} className="mb-2 text-3xl font-semibold md:text-4xl">
             It's not that your life is falling apart.
           </motion.h2>
-          <motion.div variants={fadeIn} className="space-y-6 text-lg leading-relaxed text-muted-foreground">
-            <p>
-              You handle a lot in life.
-            </p>
-            <p>
-             You show up for your work, your family, your responsibilities.
-            </p>
-            <p>
-             Most people would describe you as someone who has it together.
-            </p>
-            <p className="text-uppercase">
-            But internally it might feel very different.
-            </p>
-            <ol className="list-disc pl-[20px]">
-              <li>Your mind <b>keeps replaying situations.</b></li>
-              <li>You worry about <b>things that haven’t happened yet.</b></li>
-              <li>A small trigger can spiral into <b>hours of thinking.</b></li>
-              <li>Even when life is stable, <b>something inside feels tense.</b></li>
-              <li><b>You feel responsible</b> for keeping everything from falling apart.</li>
-            </ol>
-            <p>
-              You know these thoughts are not always rational.
-            </p>
-            <p className="text-foreground font-medium">
-              But knowing that doesn’t stop them.
-            </p>
-          </motion.div>
-
           <motion.p variants={fadeIn} className="mb-10 text-xl italic text-muted-foreground md:text-2xl">
             It's that your mind won't stop trying to prevent it.
           </motion.p>
