@@ -450,47 +450,6 @@ const Index = () => {
         </motion.div>
       </section>
 
-      {/* Section E — Book a Discovery Call */}
-      <section className="py-20 md:py-28">
-        <motion.div
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: "-100px" }}
-          variants={stagger}
-          className="mx-auto max-w-2xl px-6 text-center">
-          <motion.h2 variants={fadeIn} className="mb-6 text-3xl font-semibold md:text-4xl">
-            Book a Discovery Call
-          </motion.h2>
-          <motion.p variants={fadeIn} className="mb-8 text-lg text-muted-foreground">
-            This is a 45-minute conversation where we explore:
-          </motion.p>
-          <motion.ul variants={fadeIn} className="mx-auto mb-10 max-w-md space-y-3 text-left text-lg text-muted-foreground">
-            {[
-              "what patterns are currently keeping you stuck",
-              "what you've already tried",
-              "whether this coaching approach is the right fit for you",
-            ].map((item) => (
-              <li key={item} className="flex gap-3">
-                <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-primary/50" />
-                {item}
-              </li>
-            ))}
-          </motion.ul>
-          <motion.p variants={fadeIn} className="mb-8 text-lg text-muted-foreground">
-            There is no pressure or obligation.<br />
-            Just a chance to see what is possible.
-          </motion.p>
-          <motion.a
-            variants={fadeIn}
-            href={CALENDLY_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block rounded-full bg-primary px-10 py-4 text-lg font-semibold text-primary-foreground shadow-lg transition-all hover:shadow-xl hover:brightness-110">
-            Book Your Discovery Call
-          </motion.a>
-        </motion.div>
-      </section>
-
       {/* About */}
       <section className="bg-card py-20 md:py-28">
         <motion.div
@@ -535,7 +494,46 @@ const Index = () => {
         </motion.div>
       </section>
 
-     
+     {/* Section E — Book a Discovery Call */}
+      <section className="py-20 md:py-28">
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-100px" }}
+          variants={stagger}
+          className="mx-auto max-w-2xl px-6 text-center">
+          <motion.h2 variants={fadeIn} className="mb-6 text-3xl font-semibold md:text-4xl">
+            Book a Discovery Call
+          </motion.h2>
+          <motion.p variants={fadeIn} className="mb-8 text-lg text-muted-foreground">
+            This is a 30-minute conversation where we explore:
+          </motion.p>
+          <motion.ul variants={fadeIn} className="mx-auto mb-10 max-w-md space-y-3 text-left text-lg text-muted-foreground">
+            {[
+              "what patterns are currently keeping you stuck",
+              "what you've already tried",
+              "whether this coaching approach is the right fit for you",
+            ].map((item) => (
+              <li key={item} className="flex gap-3">
+                <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-primary/50" />
+                {item}
+              </li>
+            ))}
+          </motion.ul>
+          <motion.p variants={fadeIn} className="mb-8 text-lg text-muted-foreground">
+            There is no pressure or obligation.<br />
+            Just a chance to see what is possible.
+          </motion.p>
+          <motion.a
+            variants={fadeIn}
+            href={CALENDLY_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block rounded-full bg-primary px-10 py-4 text-lg font-semibold text-primary-foreground shadow-lg transition-all hover:shadow-xl hover:brightness-110">
+            Book Your Discovery Call
+          </motion.a>
+        </motion.div>
+      </section>
 
       {/* 3-Step Process */}
       <section className="bg-card py-20 md:py-28">
