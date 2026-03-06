@@ -165,7 +165,7 @@ const Index = () => {
             <p className="text-foreground font-medium">
               But knowing that doesn’t stop them.
             </p>
-       
+          </motion.div>
 
           <motion.p variants={fadeIn} className="mb-10 text-xl italic text-muted-foreground md:text-2xl">
             It's that your mind won't stop trying to prevent it.
