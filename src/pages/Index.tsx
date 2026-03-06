@@ -353,53 +353,6 @@ const Index = () => {
         </motion.div>
       </section>
 
-      {/* The Shift */}
-      <section className="py-20 md:py-28">
-        <motion.div
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: "-100px" }}
-          variants={stagger}
-          className="mx-auto max-w-6xl px-6">
-          
-          <motion.div variants={fadeIn} className="mx-auto mb-14 max-w-2xl text-center">
-            <h2 className="mb-4 text-3xl font-semibold md:text-4xl">
-              The shift
-            </h2>
-            <p className="text-lg text-muted-foreground">
-              This isn't about fixing yourself. It's about understanding how your
-              experience is created — and watching everything change from there.
-            </p>
-          </motion.div>
-
-          <div className="grid gap-8 md:grid-cols-3">
-            {[
-            {
-              title: "Clearer decisions",
-              desc: "When your mind quiets down, you see what matters. Decisions stop feeling like pressure and start feeling obvious."
-            },
-            {
-              title: "Lighter leadership",
-              desc: "The weight you carry isn't part of the job — it's a misunderstanding. When that falls away, leading becomes natural again."
-            },
-            {
-              title: "A spacious life",
-              desc: "Beyond the roles and responsibilities, there's a quality of life that's been waiting for you. Calm, present, alive."
-            }].
-            map((card) =>
-            <motion.div
-              key={card.title}
-              variants={fadeIn}
-              className="rounded-2xl border border-border bg-card p-8 shadow-sm transition-shadow hover:shadow-md">
-              
-                <h3 className="mb-3 text-xl font-semibold">{card.title}</h3>
-                <p className="leading-relaxed text-muted-foreground">{card.desc}</p>
-              </motion.div>
-            )}
-          </div>
-        </motion.div>
-      </section>
-
       {/* About */}
       <section className="bg-card py-20 md:py-28">
         <motion.div
