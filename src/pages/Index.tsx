@@ -451,7 +451,7 @@ const Index = () => {
       </section>
 
        {/* 3-Step Process */}
-      <section className="bg-card py-20 md:py-28">
+      <section className="py-20 md:py-28">
         <motion.div
           initial="hidden"
           whileInView="visible"
