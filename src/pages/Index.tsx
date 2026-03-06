@@ -70,7 +70,7 @@ const Index = () => {
               </motion.p>
             </div>
 
-            <motion.div variants={fadeIn} className="order-1 md:order-2">
+            <motion.div variants={fadeIn} className="order-2 md:order-2">
               <div className="relative mx-auto aspect-[3/4] max-w-md overflow-hidden rounded-2xl shadow-2xl">
                 <img
                   src={anastasiaHeadshot}
@@ -91,7 +91,7 @@ const Index = () => {
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
           variants={stagger}
-          className="mx-auto max-w-3xl px-6 grid items-center text-center gap-12">
+          className="mx-auto max-w-3xl px-6 grid items-center gap-12">
             <motion.h2
               variants={fadeIn}
               className="mb-8 text-3xl font-semibold md:text-4xl">
@@ -102,7 +102,7 @@ const Index = () => {
               <p>You show up for your work, your family, your responsibilities.</p>
               <p>Most people would describe you as someone who has it together.</p>
               <p className="text-uppercase">But internally it might feel very different.</p>
-              <ol>
+              <ol className="list-disc pl-[20px]">
                 <li>Your mind <b>keeps replaying situations.</b></li>
                 <li>You worry about <b>things that haven't happened yet.</b></li>
                 <li>A small trigger can spiral into <b>hours of thinking.</b></li>
@@ -116,50 +116,75 @@ const Index = () => {
       </section>
 
       {/* Section A — Mental Vigilance */}
-      <section className="py-20 md:py-28">
+      <section className="relative py-20 md:py-28 overflow-hidden">
+        {/* Subtle background accent */}
+        <div className="absolute inset-0 bg-gradient-to-b from-background via-secondary/20 to-background pointer-events-none" />
+        
         <motion.div
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
           variants={stagger}
-          className="mx-auto max-w-3xl px-6">
-          <motion.h2 variants={fadeIn} className="mb-2 text-3xl font-semibold md:text-4xl">
-            It's not that your life is falling apart.
-          </motion.h2>
-          <motion.p variants={fadeIn} className="mb-10 text-xl italic text-muted-foreground md:text-2xl">
-            It's that your mind won't stop trying to prevent it.
-          </motion.p>
-          <motion.p variants={fadeIn} className="mb-8 text-lg text-muted-foreground">
-            Many of my clients come to me saying things like:
-          </motion.p>
-          <motion.div variants={fadeIn} className="mb-10 space-y-4">
-            {[
-              "I feel like I always need to stay alert.",
-              "What if something goes wrong and I can't handle it?",
-              "My mind keeps projecting scenarios.",
-              "I know I'm capable… but I still feel this tension.",
-              "I just want peace in my own head.",
-            ].map((quote) => (
-              <blockquote key={quote} className="border-l-2 border-primary/30 pl-5 text-lg italic text-muted-foreground">
-                "{quote}"
-              </blockquote>
-            ))}
+          className="relative mx-auto max-w-5xl px-6">
+          
+          {/* Headline block with accent bar */}
+          <motion.div variants={fadeIn} className="mb-14 text-center">
+            <h2 className="mb-3 text-3xl font-semibold md:text-4xl lg:text-5xl">
+              It's not that your life is falling apart.
+            </h2>
+            <p className="text-xl italic text-primary md:text-2xl">
+              It's that your mind won't stop trying to prevent it.
+            </p>
           </motion.div>
-          <motion.p variants={fadeIn} className="mb-6 text-lg font-medium text-foreground">
-            This constant mental vigilance can show up as:
-          </motion.p>
-          <motion.ul variants={fadeIn} className="mb-10 grid gap-2 text-muted-foreground sm:grid-cols-2">
-            {["background anxiety", "overthinking", "emotional reactivity", "fear of relapse", "relationship sensitivity", "exhaustion from trying to control everything"].map((item) => (
-              <li key={item} className="flex items-center gap-3">
-                <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-primary/50" />
-                {item}
-              </li>
-            ))}
-          </motion.ul>
-          <motion.div variants={fadeIn} className="space-y-4 text-lg text-muted-foreground">
-            <p>And the most confusing part?</p>
-            <p className="text-foreground font-medium">You're actually doing well in life.</p>
-            <p>Which makes it even harder to understand why this is happening.</p>
+
+          {/* Client quotes as cards */}
+          <motion.div variants={fadeIn} className="mb-14">
+            <p className="mb-6 text-center text-sm font-semibold uppercase tracking-[0.15em] text-muted-foreground">
+              Many of my clients come to me saying things like
+            </p>
+            <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              {[
+                "I feel like I always need to stay alert.",
+                "What if something goes wrong and I can't handle it?",
+                "My mind keeps projecting scenarios.",
+                "I know I'm capable… but I still feel this tension.",
+                "I just want peace in my own head.",
+              ].map((quote, i) => (
+                <motion.div
+                  key={quote}
+                  variants={fadeIn}
+                  className={`rounded-xl border border-border/60 bg-card p-5 shadow-sm ${i === 4 ? "sm:col-span-2 lg:col-span-1" : ""}`}>
+                  <p className="text-base italic leading-relaxed text-foreground/80">"{quote}"</p>
+                </motion.div>
+              ))}
+            </div>
+          </motion.div>
+
+          {/* Symptoms as highlighted pills */}
+          <motion.div variants={fadeIn} className="mb-14">
+            <p className="mb-6 text-center text-lg font-medium text-foreground">
+              This constant mental vigilance can show up as:
+            </p>
+            <div className="flex flex-wrap justify-center gap-3">
+              {["background anxiety", "overthinking", "emotional reactivity", "fear of relapse", "relationship sensitivity", "exhaustion from trying to control everything"].map((item) => (
+                <span
+                  key={item}
+                  className="rounded-full border border-primary/20 bg-primary/5 px-5 py-2.5 text-sm font-medium text-foreground/80 transition-colors hover:bg-primary/10">
+                  {item}
+                </span>
+              ))}
+            </div>
+          </motion.div>
+
+          {/* Closing paradox — emphasized */}
+          <motion.div variants={fadeIn} className="mx-auto max-w-xl text-center">
+            <p className="mb-3 text-lg text-muted-foreground">And the most confusing part?</p>
+            <p className="mb-3 text-2xl font-semibold text-foreground md:text-3xl">
+              You're actually doing well in life.
+            </p>
+            <p className="text-lg text-muted-foreground">
+              Which makes it even harder to understand why this is happening.
+            </p>
           </motion.div>
         </motion.div>
       </section>
