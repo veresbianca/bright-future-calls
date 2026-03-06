@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import anastasiaHeadshot from "@/assets/anastasia-headshot.jpg";
 import anastasiaBrand from "@/assets/anastasia-brand.png";
 
-const CALENDLY_URL = "https://calendly.com/anastasiadobrovolschi/discoverycall";
+const CALENDLY_URL = "https://calendly.com/anastasiadobrovolschi/free30min";
 
 const fadeIn = {
   hidden: { opacity: 0, y: 30 },
