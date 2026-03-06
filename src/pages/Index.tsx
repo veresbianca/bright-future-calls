@@ -49,6 +49,10 @@ const Index = () => {
                 variants={fadeIn}
                 className="mb-8 max-w-lg text-lg leading-relaxed text-muted-foreground md:text-xl">You’re responsible. Capable. Reliable.
               </motion.p>
+              <motion.p
+                variants={fadeIn}
+                className="mb-8 max-w-lg text-lg leading-relaxed text-muted-foreground md:text-xl">But behind the scenes your mind keeps scanning for what could go wrong — and it’s exhausting.
+              </motion.p>
               <motion.a variants={fadeIn} href={CALENDLY_URL}
                 target="_blank"
                 rel="noopener noreferrer"
