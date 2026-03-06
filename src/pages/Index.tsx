@@ -66,7 +66,7 @@ const Index = () => {
               </motion.a>
               <motion.p
                 variants={fadeIn}
-                className="my-8 max-w-lg text-xs leading-relaxed text-muted-foreground md:text-xs">A 30-minute conversation to explore what’s keeping you stuck and whether this work is the right next step for you.
+                className="mb-8 mt-4 max-w-lg text-xs leading-relaxed text-muted-foreground md:text-xs">A 30-minute conversation to explore what’s keeping you stuck and whether this work is the right next step for you.
               </motion.p>
             </div>
 
@@ -97,22 +97,33 @@ const Index = () => {
             variants={fadeIn}
             className="mb-8 text-3xl font-semibold md:text-4xl">
             
-            I see you.
+            You might recognize yourself here.
           </motion.h2>
           <motion.div variants={fadeIn} className="space-y-6 text-lg leading-relaxed text-muted-foreground">
             <p>
-              You're the one everyone relies on. The one who keeps things running, who
-              makes the hard calls, who shows up no matter what. From the outside,
-              everything looks like it's working.
+              You handle a lot in life.
             </p>
             <p>
-              But underneath? There's a weight you don't talk about. A background hum of
-              anxiety that never quite goes away. The quiet exhaustion of holding it all
-              together — while wondering if this is really how it's supposed to feel.
+             You show up for your work, your family, your responsibilities.
+            </p>
+            <p>
+             Most people would describe you as someone who has it together.
+            </p>
+            <p>
+            But internally it might feel very different.
+            </p>
+            <ol>
+              <li>Your mind keeps replaying situations.</li>
+              <li>You worry about things that haven’t happened yet.</li>
+              <li>A small trigger can spiral into hours of thinking.</li>
+              <li>Even when life is stable, something inside feels tense.</li>
+              <li>You feel responsible for keeping everything from falling apart.</li>
+            </ol>
+            <p>
+              You know these thoughts are not always rational.
             </p>
             <p className="text-foreground font-medium">
-              You don't need another strategy. You need to see something you haven't
-              seen yet.
+              But knowing that doesn’t stop them.
             </p>
           </motion.div>
         </motion.div>
