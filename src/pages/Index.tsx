@@ -378,19 +378,19 @@ const Index = () => {
             </h2>
             <div className="space-y-4 text-lg leading-relaxed text-muted-foreground">
               <p>
-                I've spent years working with leaders who look like they have it all
-                figured out — and quietly feel like they're falling apart. I know that
-                territory well, because I've lived it myself.
+                My work focuses on helping responsible, capable adults understand how their minds create unnecessary tension — and how to step out of those patterns.
               </p>
               <p>
-                What changed everything for me wasn't a new technique or a better
-                strategy. It was a deeper understanding of how the human mind works —
-                one that dissolves stress at its root, rather than managing it on the
-                surface.
+                Instead of managing anxiety forever, the work focuses on restoring a deeper sense of internal safety.
               </p>
               <p>
-                Now I share that understanding with others. Not as a method, but as a
-                conversation — one that meets you exactly where you are.
+                Clients often come to me after years of trying to fix themselves.
+              </p>
+              <p>
+                What they discover is that nothing was broken.
+              </p>
+              <p>
+                Their mind simply learned a protective pattern that can be understood and released.
               </p>
             </div>
           </motion.div>
