@@ -450,6 +450,39 @@ const Index = () => {
         </motion.div>
       </section>
 
+       {/* 3-Step Process */}
+      <section className="bg-card py-20 md:py-28">
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-100px" }}
+          variants={stagger}
+          className="mx-auto max-w-4xl px-6">
+          
+          <motion.h2
+            variants={fadeIn}
+            className="mb-14 text-center text-3xl font-semibold md:text-4xl">
+            
+            How it works
+          </motion.h2>
+          <div className="grid gap-8 md:grid-cols-3">
+            {[
+            { step: "01", title: "Book a free discovery call", desc: "A relaxed, no-pressure conversation to explore whether this is the right fit." },
+            { step: "02", title: "We explore what's really going on", desc: "Together we look beneath the surface — not at your problems, but at how your experience is being created." },
+            { step: "03", title: "You find your way back to clarity", desc: "As understanding deepens, the noise falls away. What's left is you — clear, calm, and capable." }].
+            map((item) =>
+            <motion.div key={item.step} variants={fadeIn} className="text-center">
+                <span className="mb-4 inline-block text-4xl font-bold text-primary/30">
+                  {item.step}
+                </span>
+                <h3 className="mb-3 text-lg font-semibold">{item.title}</h3>
+                <p className="text-muted-foreground">{item.desc}</p>
+              </motion.div>
+            )}
+          </div>
+        </motion.div>
+      </section>
+
       {/* About */}
       <section className="py-20 md:py-28">
         <motion.div
@@ -491,80 +524,6 @@ const Index = () => {
               </p>
             </div>
           </motion.div>
-        </motion.div>
-      </section>
-
-     {/* Section E — Book a Discovery Call */}
-      <section className="bg-card py-20 md:py-28">
-        <motion.div
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: "-100px" }}
-          variants={stagger}
-          className="mx-auto max-w-2xl px-6 text-center">
-          <motion.h2 variants={fadeIn} className="mb-6 text-3xl font-semibold md:text-4xl">
-            Book a Discovery Call
-          </motion.h2>
-          <motion.p variants={fadeIn} className="mb-8 text-lg text-muted-foreground">
-            This is a 30-minute conversation where we explore:
-          </motion.p>
-          <motion.ul variants={fadeIn} className="mx-auto mb-10 max-w-md space-y-3 text-left text-lg text-muted-foreground">
-            {[
-              "what patterns are currently keeping you stuck",
-              "what you've already tried",
-              "whether this coaching approach is the right fit for you",
-            ].map((item) => (
-              <li key={item} className="flex gap-3">
-                <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-primary/50" />
-                {item}
-              </li>
-            ))}
-          </motion.ul>
-          <motion.p variants={fadeIn} className="mb-8 text-lg text-muted-foreground">
-            There is no pressure or obligation.<br />
-            Just a chance to see what is possible.
-          </motion.p>
-          <motion.a
-            variants={fadeIn}
-            href={CALENDLY_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block rounded-full bg-primary px-10 py-4 text-lg font-semibold text-primary-foreground shadow-lg transition-all hover:shadow-xl hover:brightness-110">
-            Book Your Discovery Call
-          </motion.a>
-        </motion.div>
-      </section>
-
-      {/* 3-Step Process */}
-      <section className="bg-card py-20 md:py-28">
-        <motion.div
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: "-100px" }}
-          variants={stagger}
-          className="mx-auto max-w-4xl px-6">
-          
-          <motion.h2
-            variants={fadeIn}
-            className="mb-14 text-center text-3xl font-semibold md:text-4xl">
-            
-            How it works
-          </motion.h2>
-          <div className="grid gap-8 md:grid-cols-3">
-            {[
-            { step: "01", title: "Book a free discovery call", desc: "A relaxed, no-pressure conversation to explore whether this is the right fit." },
-            { step: "02", title: "We explore what's really going on", desc: "Together we look beneath the surface — not at your problems, but at how your experience is being created." },
-            { step: "03", title: "You find your way back to clarity", desc: "As understanding deepens, the noise falls away. What's left is you — clear, calm, and capable." }].
-            map((item) =>
-            <motion.div key={item.step} variants={fadeIn} className="text-center">
-                <span className="mb-4 inline-block text-4xl font-bold text-primary/30">
-                  {item.step}
-                </span>
-                <h3 className="mb-3 text-lg font-semibold">{item.title}</h3>
-                <p className="text-muted-foreground">{item.desc}</p>
-              </motion.div>
-            )}
-          </div>
         </motion.div>
       </section>
 
