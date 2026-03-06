@@ -92,7 +92,7 @@ const Index = () => {
               <p>You handle a lot in life.</p>
               <p>You show up for your work, your family, your responsibilities.</p>
               <p>Most people would describe you as someone who has it together.</p>
-              <p className="text-uppercase">But internally it might feel very different.</p>
+              <p className="uppercase">But internally it might feel very different.</p>
               
               <motion.ul variants={fadeIn} className="mb-10 space-y-3 text-lg text-muted-foreground">
                 {["Your mind keeps replaying situations.", "You worry about things that haven't happened yet.", "A small trigger can spiral into hours of thinking.", "Even when life is stable, something inside feels tense.", "You feel responsible for keeping everything from falling apart."].map((item) => (
