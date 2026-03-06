@@ -48,12 +48,7 @@ const Index = () => {
               <motion.p
                 variants={fadeIn}
                 className="mb-8 max-w-lg text-lg leading-relaxed text-muted-foreground md:text-xl">You’re responsible. Capable. Reliable.
-
-
-But behind the scenes your mind keeps scanning for what could go wrong — and it’s exhausting.
-
-
-I help high-functioning adults stop living in quiet internal tension and rediscover a sense of safety within themselves.</motion.p>
+              </motion.p>
               <motion.a variants={fadeIn} href={CALENDLY_URL}
                 target="_blank"
                 rel="noopener noreferrer"
