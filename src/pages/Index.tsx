@@ -42,7 +42,7 @@ const Index = () => {
                 variants={fadeIn}
                 className="mb-6 text-4xl font-semibold leading-tight tracking-tight md:text-5xl lg:text-6xl">
                 
-                You hold it all together.{" "}
+                When everything looks fine on the outside…{" "}
                 <em className="text-primary">but inside your mind never fully relaxes.</em>
               </motion.h1>
               <motion.p
