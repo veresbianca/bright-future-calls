@@ -91,41 +91,253 @@ const Index = () => {
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
           variants={stagger}
-          className="mx-auto max-w-3xl px-6">
+          className="mx-auto max-w-6xl px-6 grid items-center gap-12 md:grid-cols-2">
           
-          <motion.h2
-            variants={fadeIn}
-            className="mb-8 text-3xl font-semibold md:text-4xl">
-            
-            You might recognize yourself here.
-          </motion.h2>
-          <motion.div variants={fadeIn} className="space-y-6 text-lg leading-relaxed text-muted-foreground">
-            <p>
-              You handle a lot in life.
-            </p>
-            <p>
-             You show up for your work, your family, your responsibilities.
-            </p>
-            <p>
-             Most people would describe you as someone who has it together.
-            </p>
-            <p className="text-uppercase">
-            But internally it might feel very different.
-            </p>
-            <ol className="list-disc">
-              <li>Your mind <b>keeps replaying situations.</b></li>
-              <li>You worry about <b>things that haven’t happened yet.</b></li>
-              <li>A small trigger can spiral into <b>hours of thinking.</b></li>
-              <li>Even when life is stable, <b>something inside feels tense.</b></li>
-              <li><b>You feel responsible</b> for keeping everything from falling apart.</li>
-            </ol>
-            <p>
-              You know these thoughts are not always rational.
-            </p>
-            <p className="text-foreground font-medium">
-              But knowing that doesn’t stop them.
-            </p>
+          <div>
+            <motion.h2
+              variants={fadeIn}
+              className="mb-8 text-3xl font-semibold md:text-4xl">
+              You might recognize yourself here.
+            </motion.h2>
+            <motion.div variants={fadeIn} className="space-y-6 text-lg leading-relaxed text-muted-foreground">
+              <p>You handle a lot in life.</p>
+              <p>You show up for your work, your family, your responsibilities.</p>
+              <p>Most people would describe you as someone who has it together.</p>
+              <p className="text-uppercase">But internally it might feel very different.</p>
+              <ol className="list-disc">
+                <li>Your mind <b>keeps replaying situations.</b></li>
+                <li>You worry about <b>things that haven't happened yet.</b></li>
+                <li>A small trigger can spiral into <b>hours of thinking.</b></li>
+                <li>Even when life is stable, <b>something inside feels tense.</b></li>
+                <li><b>You feel responsible</b> for keeping everything from falling apart.</li>
+              </ol>
+              <p>You know these thoughts are not always rational.</p>
+              <p className="text-foreground font-medium">But knowing that doesn't stop them.</p>
+            </motion.div>
+          </div>
+
+          <motion.div variants={fadeIn} className="flex items-center justify-center">
+            <svg viewBox="0 0 400 400" className="w-full max-w-sm opacity-60" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="200" cy="200" r="180" stroke="hsl(16 45% 55% / 0.15)" strokeWidth="1.5" />
+              <circle cx="200" cy="200" r="140" stroke="hsl(16 45% 55% / 0.2)" strokeWidth="1.5" />
+              <circle cx="200" cy="200" r="100" stroke="hsl(16 45% 55% / 0.25)" strokeWidth="1.5" />
+              <circle cx="200" cy="200" r="60" stroke="hsl(16 45% 55% / 0.3)" strokeWidth="1.5" />
+              <circle cx="200" cy="200" r="24" fill="hsl(16 45% 55% / 0.12)" />
+            </svg>
           </motion.div>
+        </motion.div>
+      </section>
+
+      {/* Section A — Mental Vigilance */}
+      <section className="py-20 md:py-28">
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-100px" }}
+          variants={stagger}
+          className="mx-auto max-w-3xl px-6">
+          <motion.h2 variants={fadeIn} className="mb-2 text-3xl font-semibold md:text-4xl">
+            It's not that your life is falling apart.
+          </motion.h2>
+          <motion.p variants={fadeIn} className="mb-10 text-xl italic text-muted-foreground md:text-2xl">
+            It's that your mind won't stop trying to prevent it.
+          </motion.p>
+          <motion.p variants={fadeIn} className="mb-8 text-lg text-muted-foreground">
+            Many of my clients come to me saying things like:
+          </motion.p>
+          <motion.div variants={fadeIn} className="mb-10 space-y-4">
+            {[
+              "I feel like I always need to stay alert.",
+              "What if something goes wrong and I can't handle it?",
+              "My mind keeps projecting scenarios.",
+              "I know I'm capable… but I still feel this tension.",
+              "I just want peace in my own head.",
+            ].map((quote) => (
+              <blockquote key={quote} className="border-l-2 border-primary/30 pl-5 text-lg italic text-muted-foreground">
+                "{quote}"
+              </blockquote>
+            ))}
+          </motion.div>
+          <motion.p variants={fadeIn} className="mb-6 text-lg font-medium text-foreground">
+            This constant mental vigilance can show up as:
+          </motion.p>
+          <motion.ul variants={fadeIn} className="mb-10 grid gap-2 text-muted-foreground sm:grid-cols-2">
+            {["background anxiety", "overthinking", "emotional reactivity", "fear of relapse", "relationship sensitivity", "exhaustion from trying to control everything"].map((item) => (
+              <li key={item} className="flex items-center gap-3">
+                <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-primary/50" />
+                {item}
+              </li>
+            ))}
+          </motion.ul>
+          <motion.div variants={fadeIn} className="space-y-4 text-lg text-muted-foreground">
+            <p>And the most confusing part?</p>
+            <p className="text-foreground font-medium">You're actually doing well in life.</p>
+            <p>Which makes it even harder to understand why this is happening.</p>
+          </motion.div>
+        </motion.div>
+      </section>
+
+      {/* Section B — The Real Problem */}
+      <section className="bg-card py-20 md:py-28">
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-100px" }}
+          variants={stagger}
+          className="mx-auto max-w-3xl px-6">
+          <motion.h2 variants={fadeIn} className="mb-2 text-3xl font-semibold md:text-4xl">
+            The real problem isn't your thoughts.
+          </motion.h2>
+          <motion.p variants={fadeIn} className="mb-10 text-xl italic text-muted-foreground md:text-2xl">
+            It's the relationship you've developed with them.
+          </motion.p>
+          <motion.div variants={fadeIn} className="mb-10 space-y-4 text-lg leading-relaxed text-muted-foreground">
+            <p>Highly responsible, intelligent people often develop a habit of thinking their way to safety.</p>
+            <p>Your mind learns to scan for problems so it can prevent them.</p>
+            <p>Over time, that protective mechanism becomes constant.</p>
+          </motion.div>
+          <motion.p variants={fadeIn} className="mb-6 text-lg font-medium text-foreground">
+            Your brain keeps running simulations:
+          </motion.p>
+          <motion.div variants={fadeIn} className="mb-10 space-y-4">
+            {[
+              "What if this happens?",
+              "What if I make the wrong decision?",
+              "What if I lose control?",
+              "What if things go back to how they were?",
+            ].map((q) => (
+              <blockquote key={q} className="border-l-2 border-primary/30 pl-5 text-lg italic text-muted-foreground">
+                "{q}"
+              </blockquote>
+            ))}
+          </motion.div>
+          <motion.div variants={fadeIn} className="space-y-4 text-lg text-muted-foreground">
+            <p>The mind believes it's helping.</p>
+            <p className="text-foreground font-medium">But the result is internal tension.</p>
+          </motion.div>
+        </motion.div>
+      </section>
+
+      {/* Section C — What Changes */}
+      <section className="py-20 md:py-28">
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-100px" }}
+          variants={stagger}
+          className="mx-auto max-w-3xl px-6">
+          <motion.h2 variants={fadeIn} className="mb-10 text-3xl font-semibold md:text-4xl">
+            What changes when internal safety returns
+          </motion.h2>
+          <motion.p variants={fadeIn} className="mb-8 text-lg text-muted-foreground">
+            Through this work clients begin to experience:
+          </motion.p>
+          <motion.ul variants={fadeIn} className="mb-10 space-y-3 text-lg text-muted-foreground">
+            {["a quieter mind", "less emotional reactivity", "greater clarity in decisions", "deeper trust in themselves", "more presence with family and work", "the ability to experience uncertainty without panic"].map((item) => (
+              <li key={item} className="flex items-center gap-3">
+                <span className="h-2 w-2 shrink-0 rounded-full bg-primary/50" />
+                {item}
+              </li>
+            ))}
+          </motion.ul>
+          <motion.div variants={fadeIn} className="space-y-4 text-lg text-muted-foreground">
+            <p>The goal isn't to eliminate thoughts.</p>
+            <p className="text-foreground font-medium">The goal is to stop living under their control.</p>
+          </motion.div>
+          <motion.div variants={fadeIn} className="mt-10 rounded-xl bg-secondary/50 p-6 md:p-8">
+            <blockquote className="text-center text-lg italic leading-relaxed md:text-xl">
+              "I finally feel like myself again."
+            </blockquote>
+          </motion.div>
+        </motion.div>
+      </section>
+
+      {/* Section D — Who This Is For */}
+      <section className="bg-card py-20 md:py-28">
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-100px" }}
+          variants={stagger}
+          className="mx-auto max-w-4xl px-6">
+          <motion.h2 variants={fadeIn} className="mb-12 text-center text-3xl font-semibold md:text-4xl">
+            Who this work is for
+          </motion.h2>
+          <div className="grid gap-10 md:grid-cols-2">
+            <motion.div variants={fadeIn}>
+              <h3 className="mb-6 text-lg font-semibold text-primary">This work may be for you if:</h3>
+              <ul className="space-y-4 text-muted-foreground">
+                {[
+                  "You are high-functioning but internally tense",
+                  "Your mind often runs worst-case scenarios",
+                  "You feel responsible for holding everything together",
+                  "You've tried mindset, therapy, or self-help but the patterns keep returning",
+                  "You want clarity and calm, not endless coping strategies",
+                ].map((item) => (
+                  <li key={item} className="flex gap-3">
+                    <span className="mt-1.5 h-2 w-2 shrink-0 rounded-full bg-primary/60" />
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </motion.div>
+            <motion.div variants={fadeIn}>
+              <h3 className="mb-6 text-lg font-semibold text-muted-foreground">This work may NOT be for you if:</h3>
+              <ul className="space-y-4 text-muted-foreground">
+                {[
+                  "You are looking for quick motivation or productivity hacks",
+                  "You want someone to give you constant reassurance",
+                  "You are not willing to explore how your thinking patterns operate",
+                ].map((item) => (
+                  <li key={item} className="flex gap-3">
+                    <span className="mt-1.5 h-2 w-2 shrink-0 rounded-full bg-muted-foreground/40" />
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </motion.div>
+          </div>
+        </motion.div>
+      </section>
+
+      {/* Section E — Book a Discovery Call */}
+      <section className="py-20 md:py-28">
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-100px" }}
+          variants={stagger}
+          className="mx-auto max-w-2xl px-6 text-center">
+          <motion.h2 variants={fadeIn} className="mb-6 text-3xl font-semibold md:text-4xl">
+            Book a Discovery Call
+          </motion.h2>
+          <motion.p variants={fadeIn} className="mb-8 text-lg text-muted-foreground">
+            This is a 45-minute conversation where we explore:
+          </motion.p>
+          <motion.ul variants={fadeIn} className="mx-auto mb-10 max-w-md space-y-3 text-left text-lg text-muted-foreground">
+            {[
+              "what patterns are currently keeping you stuck",
+              "what you've already tried",
+              "whether this coaching approach is the right fit for you",
+            ].map((item) => (
+              <li key={item} className="flex gap-3">
+                <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-primary/50" />
+                {item}
+              </li>
+            ))}
+          </motion.ul>
+          <motion.p variants={fadeIn} className="mb-8 text-lg text-muted-foreground">
+            There is no pressure or obligation.<br />
+            Just a chance to see what is possible.
+          </motion.p>
+          <motion.a
+            variants={fadeIn}
+            href={CALENDLY_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block rounded-full bg-primary px-10 py-4 text-lg font-semibold text-primary-foreground shadow-lg transition-all hover:shadow-xl hover:brightness-110">
+            Book Your Discovery Call
+          </motion.a>
         </motion.div>
       </section>
 
