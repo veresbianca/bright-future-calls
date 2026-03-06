@@ -468,8 +468,8 @@ const Index = () => {
           <div className="grid gap-8 md:grid-cols-3">
             {[
             { step: "01", title: "Book a free discovery call", desc: "A relaxed, no-pressure conversation to explore whether this is the right fit." },
-            { step: "02", title: "We explore what's really going on", desc: "Together we look beneath the surface — not at your problems, but at how your experience is being created." },
-            { step: "03", title: "You find your way back to clarity", desc: "As understanding deepens, the noise falls away. What's left is you — clear, calm, and capable." }].
+            { step: "02", title: "We explore what's really going on", desc: "Instead of focusing only on symptoms like anxiety or overthinking, we look at how your mind has learned to create these patterns." },
+            { step: "03", title: "Return to Clarity and Inner Stability", desc: "As understanding deepens, the noise falls away. What's left is you — clear, calm, and capable." }].
             map((item) =>
             <motion.div key={item.step} variants={fadeIn} className="text-center">
                 <span className="mb-4 inline-block text-4xl font-bold text-primary/30">
