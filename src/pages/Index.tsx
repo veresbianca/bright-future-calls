@@ -66,7 +66,7 @@ const Index = () => {
               </motion.a>
               <motion.p
                 variants={fadeIn}
-                className="mb-8 max-w-lg text-sm leading-relaxed text-muted-foreground md:text-xl">A 30-minute conversation to explore what’s keeping you stuck and whether this work is the right next step for you.
+                className="my-8 max-w-lg text-xs leading-relaxed text-muted-foreground md:text-xs">A 30-minute conversation to explore what’s keeping you stuck and whether this work is the right next step for you.
               </motion.p>
             </div>
 
