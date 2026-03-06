@@ -94,7 +94,7 @@ const Index = () => {
               <p>Most people would describe you as someone who has it together.</p>
               <p className="uppercase">But internally it might feel very different.</p>
               
-              <motion.ul variants={fadeIn} className="mb-10 space-y-3 text-lg text-muted-foreground">
+              <motion.ul variants={fadeIn} className="my-20 space-y-3 text-lg text-muted-foreground">
                 {["Your mind keeps replaying situations.", "You worry about things that haven't happened yet.", "A small trigger can spiral into hours of thinking.", "Even when life is stable, something inside feels tense.", "You feel responsible for keeping everything from falling apart."].map((item) => (
                   <li key={item} className="flex items-center gap-3">
                     <span className="h-2 w-2 shrink-0 rounded-full bg-primary/50" />
