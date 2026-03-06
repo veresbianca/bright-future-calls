@@ -26,22 +26,13 @@ const Index = () => {
             className="grid items-center gap-12 md:grid-cols-2 md:gap-16">
             
             <div className="order-2 md:order-1">
-              
-
-
-
-              
-              
               <motion.p
                 variants={fadeIn}
                 className="mb-4 text-sm font-medium uppercase tracking-[0.2em] text-muted-foreground">TRANSFORMATIVE COACH
-
-
               </motion.p>
               <motion.h1
                 variants={fadeIn}
                 className="mb-6 text-4xl font-semibold leading-tight tracking-tight md:text-5xl lg:text-6xl">
-                
                 When everything looks fine on the outside…{" "}
                 <em className="text-primary">but inside your mind never fully relaxes.</em>
               </motion.h1>
@@ -102,13 +93,16 @@ const Index = () => {
               <p>You show up for your work, your family, your responsibilities.</p>
               <p>Most people would describe you as someone who has it together.</p>
               <p className="text-uppercase">But internally it might feel very different.</p>
-              <ol className="list-disc pl-[20px]">
-                <li>Your mind <b>keeps replaying situations.</b></li>
-                <li>You worry about <b>things that haven't happened yet.</b></li>
-                <li>A small trigger can spiral into <b>hours of thinking.</b></li>
-                <li>Even when life is stable, <b>something inside feels tense.</b></li>
-                <li><b>You feel responsible</b> for keeping everything from falling apart.</li>
-              </ol>
+              
+              <motion.ul variants={fadeIn} className="mb-10 space-y-3 text-lg text-muted-foreground">
+                {["Your mind keeps replaying situations.", "You worry about <b>things that haven't happened yet.</b>", "A small trigger can spiral into <b>hours of thinking.</b>", "Even when life is stable, <b>something inside feels tense.</b>", "<b>You feel responsible</b> for keeping everything from falling apart."].map((item) => (
+                  <li key={item} className="flex items-center gap-3">
+                    <span className="h-2 w-2 shrink-0 rounded-full bg-primary/50" />
+                    {item}
+                  </li>
+                ))}
+              </motion.ul>
+
               <p>You know these thoughts are not always rational.</p>
               <p className="text-foreground font-medium">But knowing that doesn't stop them.</p>
             </motion.div>
