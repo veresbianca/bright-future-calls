@@ -26,11 +26,11 @@ const Index = () => {
             className="grid items-center gap-12 md:grid-cols-2 md:gap-16">
             
             <div className="order-2 md:order-1">
-              <motion.img
-                variants={fadeIn}
-                src={anastasiaBrand}
-                alt="Anastasia Dobrovolschi"
-                className="mb-6 h-8 w-auto md:h-10" />
+              
+
+
+
+              
               
               <motion.p
                 variants={fadeIn}
