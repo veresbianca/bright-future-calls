@@ -95,7 +95,7 @@ const Index = () => {
               <p className="text-uppercase">But internally it might feel very different.</p>
               
               <motion.ul variants={fadeIn} className="mb-10 space-y-3 text-lg text-muted-foreground">
-                {["Your mind keeps replaying situations.", "You worry about <b>things that haven't happened yet.</b>", "A small trigger can spiral into <b>hours of thinking.</b>", "Even when life is stable, <b>something inside feels tense.</b>", "<b>You feel responsible</b> for keeping everything from falling apart."].map((item) => (
+                {["Your mind keeps replaying situations.", "You worry about things that haven't happened yet.", "A small trigger can spiral into hours of thinking.", "Even when life is stable, something inside feels tense.", "You feel responsible for keeping everything from falling apart."].map((item) => (
                   <li key={item} className="flex items-center gap-3">
                     <span className="h-2 w-2 shrink-0 rounded-full bg-primary/50" />
                     {item}
