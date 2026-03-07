@@ -487,7 +487,7 @@ const Index = () => {
           className="mx-auto grid max-w-6xl items-center gap-12 px-6 md:grid-cols-2 md:gap-16">
           
           <motion.div variants={fadeIn}>
-            <div className="relative mx-auto aspect-square max-w-sm overflow-hidden rounded-2xl shadow-xl">
+            <div className="relative mx-auto max-w-sm overflow-hidden rounded-full shadow-xl">
               <img
                 src={anastasiaBrand}
                 alt="Anastasia Dobrovolschi"
