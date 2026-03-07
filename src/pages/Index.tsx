@@ -83,7 +83,7 @@ const Index = () => {
                 I help high-functioning adults stop living in quiet internal tension and rediscover a sense of safety within themselves.
               </motion.p>
             </div>
-            <motion.div variants={fadeIn} className="mt-10 md:flex md:justify-end" style={{ maxWidth: "100%" }}>
+            <motion.div variants={fadeIn} className="mt-10 md:flex" style={{ maxWidth: "100%" }}>
               <div className="md:mr-[5%]">
                 <a href={CALENDLY_URL}
                   target="_blank"
