@@ -41,7 +41,7 @@ const Index = () => {
               </motion.h1>
 
               {/* Mobile image */}
-              <motion.div variants={fadeIn} className="mb-8 md:hidden">
+              <motion.div variants={fadeIn} className="mb-8 md:hidden mt-[-96px]">
                 <div className="relative mx-auto aspect-[3/4] max-w-sm overflow-hidden rounded-2xl shadow-2xl">
                   <img
                     src={anastasiaFull}
