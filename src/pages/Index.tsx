@@ -19,7 +19,7 @@ const Index = () => {
     <div className="min-h-screen bg-background text-foreground">
       {/* Hero */}
       <header className="relative overflow-hidden">
-        <div className="mx-auto max-w-6xl px-6 pb-20 pt-12 md:pt-20 md:pb-28">
+        <div className="mx-auto max-w-7xl px-6 pb-20 pt-12 md:pt-20 md:pb-[204px]">
         <motion.div
             initial="hidden"
             animate="visible"
@@ -34,7 +34,7 @@ const Index = () => {
             <div className="relative">
               <motion.h1
                 variants={fadeIn}
-                className="mb-8 w-full text-4xl font-semibold leading-[1.12] tracking-tight md:text-5xl lg:text-6xl xl:text-7xl">
+                className="mb-8 w-full text-4xl font-semibold leading-[1.12] tracking-tight md:text-5xl lg:text-6xl xl:text-6xl">
                 When everything looks fine on the&nbsp;outside…
                 <br />
                 <em className="text-primary">but inside your mind never fully&nbsp;relaxes.</em>
