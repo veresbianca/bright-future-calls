@@ -19,7 +19,7 @@ const Index = () => {
     <div className="min-h-screen bg-background text-foreground">
       {/* Hero */}
       <header className="relative overflow-hidden">
-        <div className="mx-auto max-w-7xl px-6 pb-20 pt-12 md:pt-20 md:pb-[104px]">
+        <div className="mx-auto max-w-7xl px-6 pb-20 pt-12 md:pt-20 md:pb-[140px]">
         <motion.div
             initial="hidden"
             animate="visible"
