@@ -64,7 +64,7 @@ const Index = () => {
             <motion.div variants={fadeIn} className="order-2 md:order-2">
               <div className="relative mx-auto aspect-[3/4] max-w-md overflow-hidden rounded-2xl shadow-2xl">
                 <img
-                  src={anastasiaFull}
+                  src={anastasiaHeadshot}
                   alt="Anastasia Dobrovolschi, Transformative Coach"
                   className="h-full w-full object-cover"
                   loading="eager" />
