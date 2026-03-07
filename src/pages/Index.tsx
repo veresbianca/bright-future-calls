@@ -66,68 +66,92 @@ const Index = () => {
               </motion.div>
             </div>
 
-            <div className="max-md:max-w-full md:max-w-[55%]">
+            <div className="max-md:max-w-full md:max-w-[55%] space-y-6">
               <motion.p
                 variants={fadeIn}
-                className="mb-4 text-lg leading-relaxed text-muted-foreground md:text-xl">
+                className="text-lg leading-loose text-muted-foreground md:text-xl md:leading-loose">
                 You're responsible. Capable. Reliable.
               </motion.p>
               <motion.p
                 variants={fadeIn}
-                className="mb-4 text-lg leading-relaxed text-muted-foreground md:text-xl">
+                className="text-lg leading-loose text-muted-foreground md:text-xl md:leading-loose">
                 But behind the scenes your mind keeps scanning for what could go wrong — and it's exhausting.
               </motion.p>
               <motion.p
                 variants={fadeIn}
-                className="mb-8 text-lg leading-relaxed text-muted-foreground md:text-xl">
+                className="text-lg leading-loose text-muted-foreground md:text-xl md:leading-loose">
                 I help high-functioning adults stop living in quiet internal tension and rediscover a sense of safety within themselves.
               </motion.p>
-              <motion.a variants={fadeIn} href={CALENDLY_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block rounded-full bg-primary px-8 py-4 text-base font-semibold text-primary-foreground shadow-lg transition-all hover:shadow-xl hover:brightness-110">
-                Book Your Discovery Call
-              </motion.a>
-              <motion.p variants={fadeIn} className="mt-4 text-sm text-muted-foreground">
-                A 30-minute conversation to explore what's keeping you stuck and whether this work is the right next step for you.
-              </motion.p>
             </div>
+            <motion.div variants={fadeIn} className="mt-10 md:flex md:justify-end" style={{ maxWidth: "100%" }}>
+              <div className="md:mr-[5%]">
+                <a href={CALENDLY_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block rounded-full bg-primary px-8 py-4 text-base font-semibold text-primary-foreground shadow-lg transition-all hover:shadow-xl hover:brightness-110">
+                  Book Your Discovery Call
+                </a>
+                <p className="mt-4 text-sm text-muted-foreground">
+                  A 30-minute conversation to explore what's keeping you stuck and whether this work is the right next step for you.
+                </p>
+              </div>
+            </motion.div>
           </motion.div>
         </div>
       </header>
 
       {/* I See You */}
       <section className="bg-card py-20 md:py-28">
-        <motion.div
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: "-100px" }}
-          variants={stagger}
-          className="mx-auto max-w-3xl px-6 grid items-center gap-12">
-            <motion.h2
-              variants={fadeIn}
-              className="mb-8 text-3xl font-semibold md:text-4xl">
-              You might recognize yourself here.
-            </motion.h2>
-            <motion.div variants={fadeIn} className="space-y-6 text-lg leading-relaxed text-muted-foreground">
-              <p>You handle a lot in life.</p>
-              <p>You show up for your work, your family, your responsibilities.</p>
-              <p>Most people would describe you as someone who has it together.</p>
-              <p className="uppercase">But internally it might feel very different.</p>
-              
-              <motion.ul variants={fadeIn} className="mt-20 mb-20 space-y-3 text-lg text-muted-foreground">
-                {["Your mind keeps replaying situations.", "You worry about things that haven't happened yet.", "A small trigger can spiral into hours of thinking.", "Even when life is stable, something inside feels tense.", "You feel responsible for keeping everything from falling apart."].map((item) => (
-                  <li key={item} className="flex items-center gap-3">
-                    <span className="h-2 w-2 shrink-0 rounded-full bg-primary/50" />
-                    {item}
-                  </li>
-                ))}
-              </motion.ul>
-
-              <p>You know these thoughts are not always rational.</p>
-              <p className="text-foreground font-medium">But knowing that doesn't stop them.</p>
+        <div className="mx-auto max-w-3xl px-6">
+          {[
+            { text: "You might recognize yourself here.", type: "heading" as const },
+            { text: "You handle a lot in life.", type: "paragraph" as const },
+            { text: "You show up for your work, your family, your responsibilities.", type: "paragraph" as const },
+            { text: "Most people would describe you as someone who has it together.", type: "paragraph" as const },
+            { text: "But internally it might feel very different.", type: "emphasis" as const },
+            { text: "list", type: "list" as const },
+            { text: "You know these thoughts are not always rational.", type: "paragraph" as const },
+            { text: "But knowing that doesn't stop them.", type: "closing" as const },
+          ].map((item, i) => (
+            <motion.div
+              key={i}
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-50px" }}
+              transition={{ duration: 0.8, ease: [0.25, 0.1, 0.25, 1], delay: 0.1 }}
+            >
+              {item.type === "heading" && (
+                <h2 className="mb-16 text-3xl font-semibold md:text-4xl">{item.text}</h2>
+              )}
+              {item.type === "paragraph" && (
+                <p className="mb-8 text-lg leading-relaxed text-muted-foreground md:text-xl">{item.text}</p>
+              )}
+              {item.type === "emphasis" && (
+                <p className="mb-12 mt-4 text-xl font-semibold uppercase tracking-wide text-foreground md:text-2xl">{item.text}</p>
+              )}
+              {item.type === "list" && (
+                <ul className="my-12 space-y-5">
+                  {["Your mind keeps replaying situations.", "You worry about things that haven't happened yet.", "A small trigger can spiral into hours of thinking.", "Even when life is stable, something inside feels tense.", "You feel responsible for keeping everything from falling apart."].map((li, j) => (
+                    <motion.li
+                      key={li}
+                      initial={{ opacity: 0, x: -20 }}
+                      whileInView={{ opacity: 1, x: 0 }}
+                      viewport={{ once: true, margin: "-30px" }}
+                      transition={{ duration: 0.6, delay: j * 0.12 }}
+                      className="flex items-center gap-3 text-lg text-muted-foreground"
+                    >
+                      <span className="h-2 w-2 shrink-0 rounded-full bg-primary/50" />
+                      {li}
+                    </motion.li>
+                  ))}
+                </ul>
+              )}
+              {item.type === "closing" && (
+                <p className="mt-4 text-xl font-medium text-foreground md:text-2xl">{item.text}</p>
+              )}
             </motion.div>
-        </motion.div>
+          ))}
+        </div>
       </section>
 
       {/* Section A — Mental Vigilance */}
