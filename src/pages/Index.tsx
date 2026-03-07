@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import anastasiaHeadshot from "@/assets/anastasia-headshot.jpg";
-import anastasiaFull from "@/assets/anastasia-full.jpg";
+import anastasiaBrand from "@/assets/anastasia-brand.png";
 
 const CALENDLY_URL = "https://calendly.com/anastasiadobrovolschi/free30min";
 
@@ -489,7 +489,7 @@ const Index = () => {
           <motion.div variants={fadeIn}>
             <div className="relative mx-auto aspect-square max-w-sm overflow-hidden rounded-2xl shadow-xl">
               <img
-                src={anastasiaHeadshot}
+                src={anastasiaBrand}
                 alt="Anastasia Dobrovolschi"
                 className="h-full w-full object-cover"
                 loading="lazy" />
