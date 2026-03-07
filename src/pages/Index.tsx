@@ -20,11 +20,11 @@ const Index = () => {
       {/* Hero */}
       <header className="relative overflow-hidden">
         <div className="mx-auto max-w-6xl px-6 pb-20 pt-12 md:pt-20 md:pb-28">
-          <motion.div
+        <motion.div
             initial="hidden"
             animate="visible"
             variants={stagger}
-            className="grid items-center gap-12 md:grid-cols-2 md:gap-16">
+            className="grid items-center gap-12 md:grid-cols-[1fr_1fr] md:gap-10">
             
             <div className="order-2 md:order-1">
               <motion.p
@@ -33,9 +33,10 @@ const Index = () => {
               </motion.p>
               <motion.h1
                 variants={fadeIn}
-                className="mb-6 text-4xl font-semibold leading-tight tracking-tight md:text-5xl lg:text-6xl">
-                When everything looks fine on the outside…{" "}
-                <em className="text-primary">but inside your mind never fully relaxes.</em>
+                className="mb-6 text-4xl font-semibold leading-[1.15] tracking-tight md:text-5xl lg:text-[3.5rem] xl:text-[4rem]">
+                When everything looks fine on&nbsp;the&nbsp;outside…{" "}
+                <br className="hidden md:block" />
+                <em className="text-primary">but inside your mind never fully&nbsp;relaxes.</em>
               </motion.h1>
               <motion.p
                 variants={fadeIn}
@@ -62,8 +63,8 @@ const Index = () => {
               </motion.p>
             </div>
 
-            <motion.div variants={fadeIn} className="order-2 md:order-2">
-              <div className="relative mx-auto aspect-[3/4] max-w-md overflow-hidden rounded-2xl shadow-2xl">
+            <motion.div variants={fadeIn} className="order-1 md:order-2">
+              <div className="relative mx-auto aspect-[3/4] max-w-lg overflow-hidden rounded-2xl shadow-2xl">
                 <img
                   src={anastasiaFull}
                   alt="Anastasia Dobrovolschi, Transformative Coach"
