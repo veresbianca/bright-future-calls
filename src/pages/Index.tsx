@@ -24,55 +24,74 @@ const Index = () => {
             initial="hidden"
             animate="visible"
             variants={stagger}
-            className="grid items-center gap-12 md:grid-cols-[1fr_1fr] md:gap-10">
+            className="relative">
             
-            <div className="order-2 md:order-1">
-              <motion.p
-                variants={fadeIn}
-                className="mb-4 text-sm font-medium uppercase tracking-[0.2em] text-muted-foreground">TRANSFORMATIVE COACH
-              </motion.p>
+            <motion.p
+              variants={fadeIn}
+              className="mb-4 text-sm font-medium uppercase tracking-[0.2em] text-muted-foreground">TRANSFORMATIVE COACH
+            </motion.p>
+
+            <div className="relative">
               <motion.h1
                 variants={fadeIn}
-                className="mb-6 text-4xl font-semibold leading-[1.15] tracking-tight md:text-5xl lg:text-[3.5rem] xl:text-[4rem]">
-                When everything looks fine on&nbsp;the&nbsp;outside…{" "}
-                <br className="hidden md:block" />
+                className="mb-8 w-full text-4xl font-semibold leading-[1.12] tracking-tight md:text-5xl lg:text-6xl xl:text-7xl">
+                When everything looks fine on the&nbsp;outside…
+                <br />
                 <em className="text-primary">but inside your mind never fully&nbsp;relaxes.</em>
               </motion.h1>
+
+              {/* Mobile image */}
+              <motion.div variants={fadeIn} className="mb-8 md:hidden">
+                <div className="relative mx-auto aspect-[3/4] max-w-sm overflow-hidden rounded-2xl shadow-2xl">
+                  <img
+                    src={anastasiaFull}
+                    alt="Anastasia Dobrovolschi, Transformative Coach"
+                    className="h-full w-full object-cover"
+                    loading="eager" />
+                </div>
+              </motion.div>
+
+              {/* Desktop image — absolutely positioned */}
+              <motion.div
+                variants={fadeIn}
+                className="pointer-events-none absolute right-0 top-4 hidden md:block"
+                style={{ width: "38%" }}>
+                <div className="relative aspect-[3/4] overflow-hidden rounded-2xl shadow-2xl">
+                  <img
+                    src={anastasiaFull}
+                    alt="Anastasia Dobrovolschi, Transformative Coach"
+                    className="h-full w-full object-cover"
+                    loading="eager" />
+                </div>
+              </motion.div>
+            </div>
+
+            <div className="max-md:max-w-full md:max-w-[55%]">
               <motion.p
                 variants={fadeIn}
-                className="mb-8 max-w-lg text-lg leading-relaxed text-muted-foreground md:text-xl">You’re responsible. Capable. Reliable.
+                className="mb-4 text-lg leading-relaxed text-muted-foreground md:text-xl">
+                You're responsible. Capable. Reliable.
               </motion.p>
               <motion.p
                 variants={fadeIn}
-                className="mb-8 max-w-lg text-lg leading-relaxed text-muted-foreground md:text-xl">But behind the scenes your mind keeps scanning for what could go wrong — and it’s exhausting.
+                className="mb-4 text-lg leading-relaxed text-muted-foreground md:text-xl">
+                But behind the scenes your mind keeps scanning for what could go wrong — and it's exhausting.
               </motion.p>
               <motion.p
                 variants={fadeIn}
-                className="mb-8 max-w-lg text-lg leading-relaxed text-muted-foreground md:text-xl">I help high-functioning adults stop living in quiet internal tension and rediscover a sense of safety within themselves.
+                className="mb-8 text-lg leading-relaxed text-muted-foreground md:text-xl">
+                I help high-functioning adults stop living in quiet internal tension and rediscover a sense of safety within themselves.
               </motion.p>
               <motion.a variants={fadeIn} href={CALENDLY_URL}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block rounded-full bg-primary px-8 py-4 text-base font-semibold text-primary-foreground shadow-lg transition-all hover:shadow-xl hover:brightness-110">
-                
                 Book Your Discovery Call
               </motion.a>
-              
               <motion.p variants={fadeIn} className="mt-4 text-sm text-muted-foreground">
-                A 30-minute conversation to explore what’s keeping you stuck and whether this work is the right next step for you.
+                A 30-minute conversation to explore what's keeping you stuck and whether this work is the right next step for you.
               </motion.p>
             </div>
-
-            <motion.div variants={fadeIn} className="order-1 md:order-2">
-              <div className="relative mx-auto aspect-[3/4] max-w-lg overflow-hidden rounded-2xl shadow-2xl">
-                <img
-                  src={anastasiaFull}
-                  alt="Anastasia Dobrovolschi, Transformative Coach"
-                  className="h-full w-full object-cover"
-                  loading="eager" />
-                
-              </div>
-            </motion.div>
           </motion.div>
         </div>
       </header>
