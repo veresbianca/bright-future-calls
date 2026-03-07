@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import anastasiaHeadshot from "@/assets/anastasia-headshot.jpg";
 import anastasiaBrand from "@/assets/anastasia-brand.png";
+import anastasiaFull from "@/assets/IMG_0862.png";
 
 const CALENDLY_URL = "https://calendly.com/anastasiadobrovolschi/free30min";
 
@@ -64,7 +65,7 @@ const Index = () => {
             <motion.div variants={fadeIn} className="order-2 md:order-2">
               <div className="relative mx-auto aspect-[3/4] max-w-md overflow-hidden rounded-2xl shadow-2xl">
                 <img
-                  src={anastasiaHeadshot}
+                  src={anastasiaFull}
                   alt="Anastasia Dobrovolschi, Transformative Coach"
                   className="h-full w-full object-cover"
                   loading="eager" />
